@@ -1,6 +1,6 @@
 package model;
 
-public class Phone {
+public class Phone implements Phonable {
     private String typeMessage;
     private String type;
 

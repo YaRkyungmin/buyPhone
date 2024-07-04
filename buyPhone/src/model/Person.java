@@ -1,8 +1,8 @@
 package model;
 
-public class Person {
+public class Person implements Personable {
     private String name;
-    private Phone phone;
+    private Phonable phone;
 
     public Person(String name) {
         this.name = name;
@@ -14,7 +14,7 @@ public class Person {
         phone.turnOn();
     }
 
-    public void buy(Phone phone) {
+    public void buy(Phonable phone) {
         this.phone = phone;
         System.out.println(String.format("%s님이 %s폰을 구매했습니다.", name, phone.getType()));
     }
