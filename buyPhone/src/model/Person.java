@@ -8,14 +8,13 @@ public class Person {
         this.name = name;
         phone = null;
     }
-    @Override
-    public void turnOn(Phone phone) {
+
+    public void turnOn() {
         phone.turnOn();
     }
 
-    @Override
-    public void buy(UntitlePhone phone) {
+    public void buy(Phone phone) {
         this.phone = phone;
-        System.out.println(String.format("%s님이 %s을 구매했습니다.", name, this.phone.type));
+        System.out.println(String.format("%s님이 %s을 구매했습니다.", name, phone.type));
     }
 }

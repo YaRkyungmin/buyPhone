@@ -1,11 +1,18 @@
-import model.UntitlePerson;
-import model.UntitlePhone;
+import model.Person;
+import model.Phone;
 
 public class Main {
     public static void main(String[] args) {
-        UntitlePerson jobs = new UntitlePerson("jobs");
-        UntitlePerson Jaeyong = new UntitlePerson("Jaeyong");
-        UntitlePhone apple = new UntitlePhone("")
-        jobs.buy();
+        Person jobs = new Person("jobs");
+        Person jaeyoung = new Person("jaeyoung");
+
+        Phone iPhone = new Phone("애플","@@@");
+        Phone samsungPhone = new Phone("삼송", "***");
+
+        jobs.buy(iPhone);
+        jaeyoung.buy(samsungPhone);
+
+        jobs.turnOn();
+        jaeyoung.turnOn();
     }
 }
