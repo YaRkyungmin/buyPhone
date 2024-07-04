@@ -2,7 +2,7 @@ package model;
 
 public class Phone {
     private String typeMessage;
-    public String type;
+    private String type;
 
    public Phone(String type, String typeMessage) {
         this.type = type;
@@ -11,5 +11,9 @@ public class Phone {
 
     public void turnOn() {
         System.out.println(String.format("%s 폰 켜지는 중 %s",typeMessage, typeMessage));
+    }
+
+    public String getType() {
+        return type;
     }
 }
